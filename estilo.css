@@ -151,7 +151,8 @@ p {
 }
 
 .agr2 {
-    padding: 10% 25% 2% 30%;
+    float: left;
+    padding: 5%;
 }
 
 .acao {
