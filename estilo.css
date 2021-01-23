@@ -1,6 +1,5 @@
 html,body{
     margin: 0;
-    background-color: #FDDEAF;
 }
 
 p {
@@ -24,6 +23,14 @@ p {
     transform: translate(-50%, -50%);
     font-size: 60px;
     color: #F4F4F4;
+}
+
+.destrosa {
+    background-color: #FDDEAF
+}
+
+.destblu {
+    background-color: #B1C9E4;
 }
 
 /*Menu*/
@@ -62,8 +69,9 @@ p {
 /* Seção 1    Video  | Empatia e mão na massa */
 .section1 {
     display: flex;
-    padding:10px;
+    padding: 3%;
     float: left;
+    clear: both;
 }
 
 #diventrevista {
@@ -74,6 +82,7 @@ p {
 
 .colempatia {
     margin: 5px;
+    padding: 0
 }
 
 #t2 {
@@ -83,33 +92,37 @@ p {
 
 /* Seção 2    Foto  | Texto | Foto  */
 .section2 {
-    float: left;
-    padding:30px;
-    background-color: #b1c9e4;
+    padding:35px;
 }
 
 #divimagemhomem {
+    float: left;
     margin: 5px;
     padding-left: 30px;
-    padding-top: 10px;
+    padding-top: 20px;
+    width: 30%;
 }
 #divpq {
     width: 30%;
+    float: left;
 }
 
 #divimagemmesa {    
     width: 30%;
-    padding: 10px
+    padding: 3%;
+    float:left;
 }
 
 /* Seção 3     Vídeo manifesto  */
 .section3 {
     display: contents;
     background-color: #EBF5EE;
+    float: left;
 }
 
 .mnf {
-    padding: 10px;
+    padding: 10% 25% 5% 30%;
+    display: block;
 }
 
 
@@ -117,7 +130,6 @@ p {
 .section4 {
     padding: 50px;
     margin: 5px;
-    background-color: #b1c9e4;
 }
 
 .metas1 {
@@ -139,7 +151,7 @@ p {
 }
 
 .agr2 {
-    padding: 20px;
+    padding: 10% 25% 2% 30%;
 }
 
 .acao {
@@ -152,7 +164,6 @@ p {
 /* Sobre mim */
 .section6 {
     float: left;
-    display: block;
     background-color: #2EA0DA
 }
 .sobre {
@@ -185,9 +196,12 @@ p {
 .branco {
     color: white;
 }
+.espac {
+    padding: 5px;
+}
 
 /* Responsividade */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .section1, .section2, .section3, .section4 {
         display: block;
         width: 100%;
@@ -199,6 +213,9 @@ p {
     #container {
         display: block;
         float: none;
-        width: auto;
+        width: 80%;
+    }
+    .section4 {
+
     }
 }
