@@ -26,12 +26,14 @@ p {
 }
 
 .destrosa {
-    background-color: #FDDEAF
+    background-color: #FDDEAF;
 }
 
 .destblu {
     background-color: #B1C9E4;
-}
+}   
+
+
 
 /*Menu*/
 
@@ -39,8 +41,10 @@ p {
     background-color: white;
     color: #FAAC38;
     position: fixed;
-    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;;
+    font-size: 18px;
     width: 100%;
+    text-decoration: none;
 }
 
  #menu{
@@ -48,14 +52,11 @@ p {
     margin-right: 5%;
     list-style: none;
     margin-top: 1%;
-    background-color:rgba(100, 148, 237, 0);
  }
 
  li{
     float:left;
     padding: 20 10 20 10;
-    text-decoration-line: none; 
-    text-decoration: none;
  }
 
  li:hover{
@@ -63,13 +64,12 @@ p {
  }
 ​​​​
 #logo{
-    background-color: cornflowerblue;
     float: left;
 }
 /* Seção 1    Video  | Empatia e mão na massa */
 .section1 {
     display: flex;
-    padding: 3%;
+    padding: 2%;
     float: left;
     clear: both;
 }
@@ -82,54 +82,58 @@ p {
 
 .colempatia {
     margin: 5px;
-    padding: 0
 }
 
 #t2 {
     padding-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 /* Seção 2    Foto  | Texto | Foto  */
 .section2 {
     padding:35px;
+    width: 94,75%;
+    clear: both;
+    height: 500px;
 }
 
 #divimagemhomem {
     float: left;
     margin: 5px;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-top: 20px;
     width: 30%;
 }
 #divpq {
     width: 30%;
     float: left;
+    padding: 2%;
 }
 
 #divimagemmesa {    
     width: 30%;
-    padding: 3%;
+    padding: 1%;
     float:left;
 }
 
 /* Seção 3     Vídeo manifesto  */
 .section3 {
-    display: contents;
-    background-color: #EBF5EE;
-    float: left;
+    clear:both;
+    float: center;
+    background-color: #FDDEAF;
+    text-align: center;
 }
 
 .mnf {
-    padding: 10% 25% 5% 30%;
+    padding: 5% 25% 5% 28%;
     display: block;
 }
 
 
 /* Seção 4     Texto  | Vídeo  */
 .section4 {
+    clear:both;
     padding: 50px;
-    margin: 5px;
 }
 
 .metas1 {
@@ -142,12 +146,13 @@ p {
 }
 
 
-/* Seção 5      Texto  -  Vídeo  */
+/* Seção 5     Vídeo  -  Texto  */
 .section5 {
     float: left;
+    clear:both;
 }
 .agr1 {
-    padding: 20px;
+    padding: 5%;
 }
 
 .agr2 {
@@ -164,23 +169,54 @@ p {
 }
 /* Sobre mim */
 .section6 {
-    float: left;
-    background-color: #2EA0DA
-}
-.sobre {
-    padding: 20px;
+    clear: both;
+    display:block;
+    background-color: #2EA0DA;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 430px;
 }
 
+#sobre{
+    float:left;
+    padding-left: 5%;
+    padding-top: 3%;
+    text-align: justify;
+    width: 40%;
+}
 
+#foto{
+    float: right;
+    padding-left: 2%;
+    padding-top: 3%;
+    width: 40%;
+}
+
+#foto2{
+    border-radius: 100%;
+    padding: 1.5;
+}
+
+  
 /* Rodapé */
-.containerleft {
-    float: left;
+.section7 {
+    clear: both;
+    display:block;
     background-color: #C7A5D9;
-    padding: 0 5%;
-    position: relative;
+    font: size 15px;
+    color: white;
+    height: 200px;
 }
 #rodape {
-    color: white;
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 45%;
+}
+#rodape2 {
+    float: right;
+    position: relative;
+    width: 45%;
 }
 .espaco {
     padding: 10px;
@@ -201,9 +237,10 @@ p {
     padding: 5px;
 }
 
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
-    .section1, .section2, .section3, .section4 {
+    .section1, .section2, .section3, .section4, .section5,.section6, .section7 {
         display: block;
         width: 100%;
         float: none;
@@ -211,12 +248,13 @@ p {
     .colempatia {
         transform: translate(-20%, -20%);
     }
-    #container {
+    #container, #diventrevista, .colempatia, #divimagemhomem, #divpq, #divimagemmesa{
         display: block;
         float: none;
-        width: 80%;
+        width: 100%;
     }
-    .section4 {
-
-    }
-}
+    .container {
+        max-width: 264px;
+        margin: 0 auto;
+     }  
+ }  
